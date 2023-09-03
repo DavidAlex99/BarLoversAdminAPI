@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'event/create'
   get 'event/update'
   get 'event/destroy'
+
+  resources :bars
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

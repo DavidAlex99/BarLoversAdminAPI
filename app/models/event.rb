@@ -1,8 +1,10 @@
 class Event
   include Mongoid::Document
     
-  field :attribute1, type: String # Nombre del evento
-  field :attribute4, type: String # Imagen del evento (Link)
+  field :nameEvent, type: String # Nombre del evento
+  validates :nameEvent, presence: true, uniqueness: true
+  field :url, type: String # Imagen del evento (Link)
+  validates :url, presence: true, uniqueness: true
     
   embedded_in :bar
 end

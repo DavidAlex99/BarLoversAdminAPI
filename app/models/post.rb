@@ -1,8 +1,10 @@
 class Post
   include Mongoid::Document
     
-  field :attribute1, type: String # Nombre del post
-  field :attribute4, type: String # Imagen del post (Link)
+  field :namePost, type: String # Nombre del post
+  validates :namePost, presence: true, uniqueness: true
+  field :url, type: String # Imagen del post (Link)
+  validates :url, presence: true, uniqueness: true
     
   embedded_in :bar
 end

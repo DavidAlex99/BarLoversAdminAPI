@@ -1,11 +1,15 @@
 class Menu
   include Mongoid::Document
     
-  field :attribute1, type: String
-  field :attribute2, type: Integer
-  field :attribute3, type: String
-  field :attribute4, type: String
-    
+  field :name, type: String
+  validates :name, presence: true, uniqueness: true
+  field :price, type: Integer
+  validates :price, presence: true, uniqueness: true
+  field :namePhoto, type: String
+  validates :namePhoto, presence: true, uniqueness: true
+  field :url, type: String
+  validates :url, presence: true, uniqueness: true  
+  
   embedded_in :bar
 end
   
