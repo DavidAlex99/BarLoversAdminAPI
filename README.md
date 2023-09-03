@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este proyecto esta desarrollado en Ruby on Rails para el proyecto de BarLovers.
+Ruby toma la tarea de Backend y On Rails toma el rol de API.
+### Levantar el servidor
+Ya que se va a levantar e conjunto para que funcione con Angular BarLovers (Front-end) hay que levantarlo en un puerto ya especifico (mismo puerto que esta registrado en angular para detectar el back-end)
+```
+rails server -p 4000
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
