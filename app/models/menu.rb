@@ -3,7 +3,7 @@ class Menu
     
   field :name, type: String
   validates :name, presence: true, uniqueness: true
-  field :price, type: Integer
+  field :price, type: Float
   validates :price, presence: true, uniqueness: true
   field :namePhoto, type: String
   validates :namePhoto, presence: true, uniqueness: true
