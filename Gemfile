@@ -30,6 +30,8 @@ gem "bootsnap", require: false
 # ara conectar con mongo
 gem 'mongoid', '~> 7.0'
 
+gem 'psych', '~> 5.1'
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
 gem 'rack-cors'
